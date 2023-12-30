@@ -14,9 +14,9 @@ colorama.init()
 
 # URLs of the webpages you want to scrape
 urls = [
-    "INSERT",
-    "URLS",
-    "HERE"
+    "https://archive.org/download/WiiRomSetByGhostware/",
+    "https://archive.org/download/WiiRomSetByGhostwarePart2/",
+    "https://archive.org/download/WiiRomSetByGhostwarePart3/"
 ]
 
 def download_file(url, download_directory, color):
@@ -63,7 +63,7 @@ def download_file(url, download_directory, color):
         print(color + f"An error occurred: {err}" + Fore.RESET)
 
 # Create a directory for the downloaded files
-download_directory = "wbfs"
+download_directory = "wqb"
 os.makedirs(download_directory, exist_ok=True)
 
 # Define a list of colors for console output
